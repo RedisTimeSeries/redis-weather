@@ -11,11 +11,13 @@
 
 ## Introduction
 
-The purpose of this software is export current, hourly and daily weather forecast from https://openweathermap.org and display it on Grafana dashboards in the various numeric and graphs forms for a precise vision of the weather in the multiple locations, by multiple parameters, including temperature, wind speed, amount of precipitation, percent of cloudiness, a distance of visibility, etc.  There are a lot of interesting locations within a couple of hours drive from my house, and the weather can be very different from one to another. What I really want is a dashboard that shows the weather in a dozen locations on one screen, so I can compare conditions at a glance. Critically, I don’t just want to compare locations near each other.
+The purpose of this software is export current, hourly and daily weather forecast from https://openweathermap.org and display it on Grafana dashboards in the various numeric and graphs forms for a precise vision of the weather in the multiple locations, by multiple parameters, including temperature, wind speed, amount of precipitation, percent of cloudiness, a distance of visibility, etc.  
 
-![](doc/main_screen_shot.png)
+There are a lot of interesting locations within a couple of hours drive from my house, and the weather can be very different from one to another. What I really want is a dashboard that shows the weather in a dozen locations on one screen, so I can compare conditions at a glance. Critically, I don’t just want to compare locations near each other.
 
-The Docker container runs the following applications:
+![](images/main_screen_shot.png)
+
+### The Docker container runs the following applications:
 
 * openweather_redis_exporter.py - app to get weather metrics from https://openweathermap.org
 * Redis database with RedisTimeSeries module - to store historical weather data and future forecasts
@@ -40,9 +42,9 @@ Grafana allows me to highlight low/high zones for temperature, dangerous zones f
 	"places": #the list of locations to get the wether for
 	[
 		{
-		    "name":"Marlton", #Location name. Please note, current version doesn't support spaces in the names
-		    "lat":39.86, #lattitude
-		    "lon":-74.8, #longtitude
+		    "name":"NewYork", #Location name. Please note, current version doesn't support spaces in the names
+		    "lat":40.71274, #lattitude
+		    "lon":-74.005974, #longtitude
 		    "activity":[ "Bike" ] #reserved for future use
 		},
 		...
@@ -70,7 +72,7 @@ In the next version of my weather dashboard, I plan to display an activity type 
 
 We love to hear from users, developers and the whole community interested by this plugin. These are various ways to get in touch with us:
 
-- Ask a question, request a new feature and file a bug with GitHub issues.
+- Ask a question, request a new feature and file a bug with GitHub [issues](issues/).
 - Star the repository to show your support.
 
 ## Contributing
