@@ -39,12 +39,12 @@ Grafana allows me to highlight low/high zones for temperature, dangerous zones f
 	"pull_freq":1800, #default frequesncy of pulling data from openweathermap.org
 	"places": #the list of locations to get the wether for
 	[
-        {
-            "name":"Marlton", #Location name. Please note, current version doesn't support spaces in the names
-            "lat":39.86, #lattitude
-            "lon":-74.8, #longtitude
-            "activity":[ "Bike" ] #reserved for future use
-        },
+		{
+		    "name":"Marlton", #Location name. Please note, current version doesn't support spaces in the names
+		    "lat":39.86, #lattitude
+		    "lon":-74.8, #longtitude
+		    "activity":[ "Bike" ] #reserved for future use
+		},
 		...
 	]
 }
