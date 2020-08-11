@@ -72,7 +72,7 @@ In the next version of my weather dashboard, I plan to display an activity type 
 
 We love to hear from users, developers and the whole community interested by this plugin. These are various ways to get in touch with us:
 
-- Ask a question, request a new feature and file a bug with GitHub [issues](issues/).
+- Ask a question, request a new feature and file a bug with GitHub issues.
 - Star the repository to show your support.
 
 ## Contributing
