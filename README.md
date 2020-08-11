@@ -13,7 +13,7 @@
 
 The purpose of this software is export current, hourly and daily weather forecast from https://openweathermap.org and display it on Grafana dashboards in the various numeric and graphs forms for a precise vision of the weather in the multiple locations, by multiple parameters, including temperature, wind speed, amount of precipitation, percent of cloudiness, a distance of visibility, etc.  There are a lot of interesting locations within a couple of hours drive from my house, and the weather can be very different from one to another. What I really want is a dashboard that shows the weather in a dozen locations on one screen, so I can compare conditions at a glance. Critically, I don’t just want to compare locations near each other.
 
-I love working with numbers. I know that landscape photography works best when the amount of cloud cover is somewhere between 20% - 50%. For flying my drone, wind speeds below 10 mph are ideal, 10 - 20 mph is tough, and anything above 20 mph can be dangerous. 
+![](docs/main_screen_shot.png)
 
 The Docker container runs the following applications:
 
@@ -30,7 +30,7 @@ Grafana allows me to highlight low/high zones for temperature, dangerous zones f
 
 `openweather_redis_exporter.py` script comes together with the configuration file `openweather_redis_exporter.json`, which has a number of mandatory and optional parameters: 
 
-```json
+```
 {
 	"units":"imperial"|"metric", #units format retrieving data from openweathermap.org. The default is "imperial", if you change it to "metric", you also need to update the units in Grafana dashboard
 	"open_weather_api":"<api_key>", #provide your API key, which you will receive after the registration at openweathermap.org
