@@ -13,7 +13,7 @@
 
 The purpose of this software is export current, hourly and daily weather forecast from https://openweathermap.org and display it on Grafana dashboards in the various numeric and graphs forms for a precise vision of the weather in the multiple locations, by multiple parameters, including temperature, wind speed, amount of precipitation, percent of cloudiness, a distance of visibility, etc.  There are a lot of interesting locations within a couple of hours drive from my house, and the weather can be very different from one to another. What I really want is a dashboard that shows the weather in a dozen locations on one screen, so I can compare conditions at a glance. Critically, I don’t just want to compare locations near each other.
 
-![](docs/main_screen_shot.png)
+![](doc/main_screen_shot.png)
 
 The Docker container runs the following applications:
 
