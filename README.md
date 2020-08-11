@@ -30,7 +30,7 @@ Grafana allows me to highlight low/high zones for temperature, dangerous zones f
 
 `openweather_redis_exporter.py` script comes together with the configuration file `openweather_redis_exporter.json`, which has a number of mandatory and optional parameters: 
 
-```json
+```
 {
 	"units":"imperial"|"metric", #units format retrieving data from openweathermap.org. The default is "imperial", if you change it to "metric", you also need to update the units in Grafana dashboard
 	"open_weather_api":"<api_key>", #provide your API key, which you will receive after the registration at openweathermap.org
@@ -39,12 +39,12 @@ Grafana allows me to highlight low/high zones for temperature, dangerous zones f
 	"pull_freq":1800, #default frequesncy of pulling data from openweathermap.org
 	"places": #the list of locations to get the wether for
 	[
-        {
-            "name":"Marlton", #Location name. Please note, current version doesn't support spaces in the names
-            "lat":39.86, #lattitude
-            "lon":-74.8, #longtitude
-            "activity":[ "Bike" ] #reserved for future use
-        },
+		{
+		    "name":"Marlton", #Location name. Please note, current version doesn't support spaces in the names
+		    "lat":39.86, #lattitude
+		    "lon":-74.8, #longtitude
+		    "activity":[ "Bike" ] #reserved for future use
+		},
 		...
 	]
 }
