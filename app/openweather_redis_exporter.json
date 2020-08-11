@@ -1,0 +1,40 @@
+{
+    "units":"imperial",
+    "open_weather_api":"",
+    "redis_host":"host.docker.internal",
+    "redis_port":6379,
+    "pull_freq":1800,
+    "places":
+    [
+        {
+            "name":"NewYork",
+            "lat":40.71274,
+            "lon":-74.005974,
+            "activity":[ "Bike" ]        
+        },
+        {
+            "name":"Avalon",
+            "lat":39.1, 
+            "lon":-74.72,
+            "activity":[ "Beach", "Photo" ]
+        },
+        {
+            "name":"Philadelphia",
+            "lat":39.952778,  
+            "lon":-75.163611,
+            "activity":[ "Photo" ]
+        },
+        {
+            "name":"ColdSpring",
+            "lat":41.4201,
+            "lon":-73.9546,
+            "activity":[ "Hiking", "Photo" ]       
+        },
+        {
+            "name":"Princeton",
+            "lat":40.357115, 
+            "lon":-74.670165,
+            "activity":[ "Photo" ]       
+        }
+    ] 
+}
