@@ -13,9 +13,14 @@
 
 The purpose of this software is export current, hourly and daily weather forecast from https://openweathermap.org and display it on Grafana dashboards in the various numeric and graphs forms for a precise vision of the weather in the multiple locations, by multiple parameters, including temperature, wind speed, amount of precipitation, percent of cloudiness, a distance of visibility, etc.  
 
-There are a lot of interesting locations within a couple of hours drive from my house, and the weather can be very different from one to another. What I really want is a dashboard that shows the weather in a dozen locations on one screen, so I can compare conditions at a glance. Critically, I don’t just want to compare locations near each other.
+There are a lot of interesting locations within a couple of hours drive from my house, and the weather can be very different from one to another. What I really want is a dashboard that shows the weather in a dozen locations on one screen, so I can compare conditions at a glance. And I don’t just want to compare locations near each other, but understand, which is good for particular type of activity: bike ride, rock climbing, drone fly, landscape photography, hiking, etc. 
+
+So, additionaly to the current weather and forecast, the dashboard maps for every type of defined activity and show detailed forecast for each activity at particular location. You can customize the activites and their parameters in the config file (see below).  
 
 ![](images/main_screen_shot.png)
+
+![](images/activity_maps.png)
+
 
 ### The Docker container runs the following applications:
 
@@ -45,10 +50,29 @@ Grafana allows me to highlight low/high zones for temperature, dangerous zones f
 		    "name":"NewYork", #Location name. Please note, current version doesn't support spaces in the names
 		    "lat":40.71274, #lattitude
 		    "lon":-74.005974, #longtitude
-		    "activity":[ "Bike" ] #reserved for future use
+		    "activity":[ "Bike" ] #list of activities to monitor for this location
 		},
 		...
-	]
+	],
+	"activity:Hiking": #definition of activity "Hiking". You can include any number of the metrics with minimum and maximum values accepted for this activity 
+    [
+        {
+            "name":"temp",
+            "min":20,
+            "max":90
+        },
+        {
+            "name":"rain",
+            "min":0,
+            "max":1
+        },
+		...
+    ],
+	"activity:<activity_name>":
+    [
+		...
+    ],
+	...
 }
 ```
 
@@ -63,10 +87,6 @@ The project provides `docker-compose.yml` to start Redis with RedisTimeSeries mo
 ```bash
 docker-compose up
 ```
-
-## What’s next
-
-In the next version of my weather dashboard, I plan to display an activity type on the map according to the current conditions. The dashboard will show the places where the weather is suitable for specific activities like photography, skiing, hiking, climbing, drone flight, etc. Stay tuned! Or you can contribute to this project on GitHub. 
 
 ## Feedback
 

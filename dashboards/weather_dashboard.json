@@ -14,13 +14,12 @@
   },
   "editable": true,
   "gnetId": null,
-  "graphTooltip": 0,
+  "graphTooltip": 2,
   "id": 1,
-  "iteration": 1597106314075,
+  "iteration": 1600205062720,
   "links": [],
   "panels": [
     {
-      "collapsed": false,
       "datasource": null,
       "gridPos": {
         "h": 1,
@@ -28,17 +27,484 @@
         "x": 0,
         "y": 0
       },
+      "id": 309,
+      "title": "What to do in $location ",
+      "type": "row"
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 4,
+      "fillGradient": 10,
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 0,
+        "y": 1
+      },
+      "hiddenSeries": false,
+      "id": 277,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 0,
+      "maxPerRow": 4,
+      "nullPointMode": "null",
+      "percentage": false,
+      "pluginVersion": "7.1.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "repeat": "activity_location",
+      "repeatDirection": "h",
+      "scopedVars": {
+        "activity_location": {
+          "selected": false,
+          "text": "Bike",
+          "value": "Bike"
+        }
+      },
+      "seriesOverrides": [
+        {
+          "alias": "Value",
+          "color": "#37872D"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": true,
+      "targets": [
+        {
+          "command": "ts.mrange",
+          "filter": "location=\"$location\" mode=activity_graph activity=$activity_location",
+          "legend": "activity",
+          "query": "",
+          "refId": "A",
+          "type": "timeSeries",
+          "value": "value"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "$activity_location in $location next 48 hours",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "decimals": 0,
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": "1",
+          "min": "0",
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 4,
+      "fillGradient": 10,
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 6,
+        "y": 1
+      },
+      "hiddenSeries": false,
+      "id": 310,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 0,
+      "maxPerRow": 4,
+      "nullPointMode": "null",
+      "percentage": false,
+      "pluginVersion": "7.1.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1600205062720,
+      "repeatPanelId": 277,
+      "scopedVars": {
+        "activity_location": {
+          "selected": false,
+          "text": "Climbing",
+          "value": "Climbing"
+        }
+      },
+      "seriesOverrides": [
+        {
+          "alias": "Value",
+          "color": "#37872D"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": true,
+      "targets": [
+        {
+          "command": "ts.mrange",
+          "filter": "location=\"$location\" mode=activity_graph activity=$activity_location",
+          "legend": "activity",
+          "query": "",
+          "refId": "A",
+          "type": "timeSeries",
+          "value": "value"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "$activity_location in $location next 48 hours",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "decimals": 0,
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": "1",
+          "min": "0",
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 4,
+      "fillGradient": 10,
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 12,
+        "y": 1
+      },
+      "hiddenSeries": false,
+      "id": 311,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 0,
+      "maxPerRow": 4,
+      "nullPointMode": "null",
+      "percentage": false,
+      "pluginVersion": "7.1.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1600205062720,
+      "repeatPanelId": 277,
+      "scopedVars": {
+        "activity_location": {
+          "selected": false,
+          "text": "Hiking",
+          "value": "Hiking"
+        }
+      },
+      "seriesOverrides": [
+        {
+          "alias": "Value",
+          "color": "#37872D"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": true,
+      "targets": [
+        {
+          "command": "ts.mrange",
+          "filter": "location=\"$location\" mode=activity_graph activity=$activity_location",
+          "legend": "activity",
+          "query": "",
+          "refId": "A",
+          "type": "timeSeries",
+          "value": "value"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "$activity_location in $location next 48 hours",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "decimals": 0,
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": "1",
+          "min": "0",
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {},
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {}
+        },
+        "overrides": []
+      },
+      "fill": 4,
+      "fillGradient": 10,
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 18,
+        "y": 1
+      },
+      "hiddenSeries": false,
+      "id": 312,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": false,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 0,
+      "maxPerRow": 4,
+      "nullPointMode": "null",
+      "percentage": false,
+      "pluginVersion": "7.1.5",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1600205062720,
+      "repeatPanelId": 277,
+      "scopedVars": {
+        "activity_location": {
+          "selected": false,
+          "text": "Photo",
+          "value": "Photo"
+        }
+      },
+      "seriesOverrides": [
+        {
+          "alias": "Value",
+          "color": "#37872D"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": true,
+      "targets": [
+        {
+          "command": "ts.mrange",
+          "filter": "location=\"$location\" mode=activity_graph activity=$activity_location",
+          "legend": "activity",
+          "query": "",
+          "refId": "A",
+          "type": "timeSeries",
+          "value": "value"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "$activity_location in $location next 48 hours",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "decimals": 0,
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": "1",
+          "min": "0",
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "collapsed": false,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 5
+      },
       "id": 12,
       "panels": [],
       "repeat": "location",
       "scopedVars": {
         "location": {
           "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
+          "text": "Philadelphia",
+          "value": "Philadelphia"
         }
       },
-      "title": "$location now",
+      "title": "Weather in $location",
       "type": "row"
     },
     {
@@ -62,9 +528,9 @@
       },
       "gridPos": {
         "h": 2,
-        "w": 3,
+        "w": 2,
         "x": 0,
-        "y": 1
+        "y": 6
       },
       "id": 29,
       "options": {
@@ -81,12 +547,12 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "7.1.0",
+      "pluginVersion": "7.1.5",
       "scopedVars": {
         "location": {
           "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
+          "text": "Philadelphia",
+          "value": "Philadelphia"
         }
       },
       "targets": [
@@ -110,7 +576,132 @@
         "defaults": {
           "custom": {},
           "mappings": [],
-          "max": 120,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-purple",
+                "value": null
+              }
+            ]
+          },
+          "unit": "dateTimeAsUS"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 2,
+        "x": 2,
+        "y": 6
+      },
+      "id": 20,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.1.5",
+      "scopedVars": {
+        "location": {
+          "selected": true,
+          "text": "Philadelphia",
+          "value": "Philadelphia"
+        }
+      },
+      "targets": [
+        {
+          "command": "ts.range",
+          "field": "sunrise",
+          "key": "weather:$location:current:sunrise",
+          "query": "",
+          "refId": "A",
+          "type": "timeSeries"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Sunrise",
+      "type": "stat"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-purple",
+                "value": null
+              }
+            ]
+          },
+          "unit": "dateTimeAsUS"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 2,
+        "x": 4,
+        "y": 6
+      },
+      "id": 21,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "7.1.5",
+      "scopedVars": {
+        "location": {
+          "selected": true,
+          "text": "Philadelphia",
+          "value": "Philadelphia"
+        }
+      },
+      "targets": [
+        {
+          "command": "ts.range",
+          "field": "sunset",
+          "key": "weather:$location:current:sunset",
+          "query": "",
+          "refId": "A",
+          "type": "timeSeries"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Sunset",
+      "type": "stat"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "mappings": [],
           "min": 20,
           "thresholds": {
             "mode": "absolute",
@@ -120,12 +711,16 @@
                 "value": null
               },
               {
+                "color": "light-green",
+                "value": 50
+              },
+              {
                 "color": "dark-yellow",
-                "value": 55
+                "value": 60
               },
               {
                 "color": "dark-orange",
-                "value": 70
+                "value": 75
               },
               {
                 "color": "dark-red",
@@ -138,14 +733,14 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 3,
-        "w": 12,
-        "x": 3,
-        "y": 1
+        "h": 2,
+        "w": 4,
+        "x": 6,
+        "y": 6
       },
       "id": 22,
       "options": {
-        "displayMode": "lcd",
+        "displayMode": "gradient",
         "orientation": "horizontal",
         "reduceOptions": {
           "calcs": [
@@ -156,12 +751,12 @@
         },
         "showUnfilled": true
       },
-      "pluginVersion": "7.1.0",
+      "pluginVersion": "7.1.5",
       "scopedVars": {
         "location": {
           "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
+          "text": "Philadelphia",
+          "value": "Philadelphia"
         }
       },
       "targets": [
@@ -190,6 +785,82 @@
       "fieldConfig": {
         "defaults": {
           "custom": {},
+          "decimals": 0,
+          "mappings": [],
+          "max": 10,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "super-light-blue",
+                "value": null
+              },
+              {
+                "color": "light-blue",
+                "value": 2.5
+              },
+              {
+                "color": "semi-dark-blue",
+                "value": 5
+              },
+              {
+                "color": "dark-blue",
+                "value": 7.5
+              }
+            ]
+          },
+          "unit": "lengthmi"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 4,
+        "x": 10,
+        "y": 6
+      },
+      "id": 26,
+      "options": {
+        "displayMode": "gradient",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true
+      },
+      "pluginVersion": "7.1.5",
+      "scopedVars": {
+        "location": {
+          "selected": true,
+          "text": "Philadelphia",
+          "value": "Philadelphia"
+        }
+      },
+      "targets": [
+        {
+          "command": "ts.range",
+          "field": "visibility",
+          "key": "weather:$location:current:visibility",
+          "query": "",
+          "refId": "A",
+          "type": "timeSeries"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Visibility",
+      "type": "bargauge"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
           "mappings": [],
           "max": 100,
           "min": 0,
@@ -197,7 +868,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "light-blue",
+                "color": "semi-dark-blue",
                 "value": null
               },
               {
@@ -215,14 +886,15 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 6,
-        "w": 3,
-        "x": 15,
-        "y": 1
+        "h": 2,
+        "w": 4,
+        "x": 14,
+        "y": 6
       },
       "id": 24,
       "options": {
-        "orientation": "auto",
+        "displayMode": "gradient",
+        "orientation": "horizontal",
         "reduceOptions": {
           "calcs": [
             "last"
@@ -230,15 +902,14 @@
           "fields": "",
           "values": false
         },
-        "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showUnfilled": true
       },
-      "pluginVersion": "7.1.0",
+      "pluginVersion": "7.1.5",
       "scopedVars": {
         "location": {
           "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
+          "text": "Philadelphia",
+          "value": "Philadelphia"
         }
       },
       "targets": [
@@ -254,82 +925,7 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Cloud",
-      "type": "gauge"
-    },
-    {
-      "datasource": null,
-      "fieldConfig": {
-        "defaults": {
-          "custom": {},
-          "mappings": [],
-          "max": 10,
-          "min": 0,
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "dark-blue",
-                "value": null
-              },
-              {
-                "color": "semi-dark-blue",
-                "value": 2.5
-              },
-              {
-                "color": "light-blue",
-                "value": 5
-              },
-              {
-                "color": "super-light-blue",
-                "value": 7.5
-              }
-            ]
-          },
-          "unit": "lengthmi"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 3,
-        "x": 18,
-        "y": 1
-      },
-      "id": 26,
-      "options": {
-        "orientation": "auto",
-        "reduceOptions": {
-          "calcs": [
-            "last"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "showThresholdLabels": false,
-        "showThresholdMarkers": true
-      },
-      "pluginVersion": "7.1.0",
-      "scopedVars": {
-        "location": {
-          "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
-        }
-      },
-      "targets": [
-        {
-          "command": "ts.range",
-          "field": "visibility",
-          "key": "weather:$location:current:visibility",
-          "query": "",
-          "refId": "A",
-          "type": "timeSeries"
-        }
-      ],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Visibility",
-      "type": "gauge"
+      "type": "bargauge"
     },
     {
       "datasource": null,
@@ -342,23 +938,23 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "super-light-blue",
+                "color": "super-light-purple",
                 "value": null
               },
               {
-                "color": "light-blue",
+                "color": "light-purple",
                 "value": 5
               },
               {
-                "color": "semi-dark-blue",
+                "color": "semi-dark-purple",
                 "value": 10
               },
               {
-                "color": "dark-blue",
+                "color": "dark-purple",
                 "value": 15
               },
               {
-                "color": "dark-purple",
+                "color": "rgb(67, 21, 89)",
                 "value": 20
               }
             ]
@@ -368,14 +964,15 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 6,
+        "h": 2,
         "w": 3,
-        "x": 21,
-        "y": 1
+        "x": 18,
+        "y": 6
       },
       "id": 27,
       "options": {
-        "orientation": "auto",
+        "displayMode": "gradient",
+        "orientation": "horizontal",
         "reduceOptions": {
           "calcs": [
             "mean"
@@ -383,15 +980,14 @@
           "fields": "",
           "values": false
         },
-        "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showUnfilled": true
       },
-      "pluginVersion": "7.1.0",
+      "pluginVersion": "7.1.5",
       "scopedVars": {
         "location": {
           "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
+          "text": "Philadelphia",
+          "value": "Philadelphia"
         }
       },
       "targets": [
@@ -407,93 +1003,30 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Rain",
-      "type": "gauge"
+      "type": "bargauge"
     },
     {
       "datasource": null,
       "fieldConfig": {
         "defaults": {
           "custom": {},
+          "decimals": 0,
           "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "dark-purple",
-                "value": null
-              }
-            ]
-          },
-          "unit": "dateTimeAsUS"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 2,
-        "w": 3,
-        "x": 0,
-        "y": 3
-      },
-      "id": 20,
-      "options": {
-        "colorMode": "background",
-        "graphMode": "area",
-        "justifyMode": "auto",
-        "orientation": "auto",
-        "reduceOptions": {
-          "calcs": [
-            "last"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "textMode": "auto"
-      },
-      "pluginVersion": "7.1.0",
-      "scopedVars": {
-        "location": {
-          "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
-        }
-      },
-      "targets": [
-        {
-          "command": "ts.range",
-          "field": "sunrise",
-          "key": "weather:$location:current:sunrise",
-          "query": "",
-          "refId": "A",
-          "type": "timeSeries"
-        }
-      ],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Sunrise",
-      "type": "stat"
-    },
-    {
-      "datasource": null,
-      "fieldConfig": {
-        "defaults": {
-          "custom": {},
-          "mappings": [],
-          "max": 25,
           "min": 0,
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
-                "color": "dark-blue",
+                "color": "light-green",
                 "value": null
               },
               {
                 "color": "dark-yellow",
-                "value": 12
+                "value": 10
               },
               {
                 "color": "dark-orange",
-                "value": 16
+                "value": 15
               },
               {
                 "color": "dark-red",
@@ -506,14 +1039,14 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 3,
-        "w": 12,
-        "x": 3,
-        "y": 4
+        "h": 2,
+        "w": 3,
+        "x": 21,
+        "y": 6
       },
       "id": 25,
       "options": {
-        "displayMode": "lcd",
+        "displayMode": "gradient",
         "orientation": "horizontal",
         "reduceOptions": {
           "calcs": [
@@ -524,12 +1057,12 @@
         },
         "showUnfilled": true
       },
-      "pluginVersion": "7.1.0",
+      "pluginVersion": "7.1.5",
       "scopedVars": {
         "location": {
           "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
+          "text": "Philadelphia",
+          "value": "Philadelphia"
         }
       },
       "targets": [
@@ -554,69 +1087,6 @@
       "type": "bargauge"
     },
     {
-      "datasource": null,
-      "fieldConfig": {
-        "defaults": {
-          "custom": {},
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "dark-purple",
-                "value": null
-              }
-            ]
-          },
-          "unit": "dateTimeAsUS"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 2,
-        "w": 3,
-        "x": 0,
-        "y": 5
-      },
-      "id": 21,
-      "options": {
-        "colorMode": "background",
-        "graphMode": "area",
-        "justifyMode": "auto",
-        "orientation": "auto",
-        "reduceOptions": {
-          "calcs": [
-            "last"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "textMode": "auto"
-      },
-      "pluginVersion": "7.1.0",
-      "scopedVars": {
-        "location": {
-          "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
-        }
-      },
-      "targets": [
-        {
-          "command": "ts.range",
-          "field": "sunset",
-          "key": "weather:$location:current:sunset",
-          "query": "",
-          "refId": "A",
-          "type": "timeSeries"
-        }
-      ],
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Sunset",
-      "type": "stat"
-    },
-    {
       "aliasColors": {},
       "bars": false,
       "dashLength": 10,
@@ -625,8 +1095,7 @@
       "description": "",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
-          "links": []
+          "custom": {}
         },
         "overrides": []
       },
@@ -636,7 +1105,7 @@
         "h": 8,
         "w": 8,
         "x": 0,
-        "y": 7
+        "y": 8
       },
       "hiddenSeries": false,
       "id": 6,
@@ -650,18 +1119,18 @@
         "values": false
       },
       "lines": true,
-      "linewidth": 2,
+      "linewidth": 3,
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.1.0",
+      "pluginVersion": "7.1.5",
       "pointradius": 3,
       "points": false,
       "renderer": "flot",
       "scopedVars": {
         "location": {
           "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
+          "text": "Philadelphia",
+          "value": "Philadelphia"
         }
       },
       "seriesOverrides": [],
@@ -671,7 +1140,7 @@
       "targets": [
         {
           "command": "ts.mrange",
-          "filter": "location=$location metric=feels_like mode=hourly",
+          "filter": "location=\"$location\" metric=feels_like mode=hourly",
           "hide": false,
           "legend": "location",
           "query": "",
@@ -714,7 +1183,7 @@
         }
       ],
       "timeShift": null,
-      "title": "Temperature",
+      "title": "Temperature Feels Like in $location",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -760,8 +1229,7 @@
       "description": "",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
-          "links": []
+          "custom": {}
         },
         "overrides": []
       },
@@ -771,7 +1239,7 @@
         "h": 8,
         "w": 8,
         "x": 8,
-        "y": 7
+        "y": 8
       },
       "hiddenSeries": false,
       "id": 7,
@@ -785,18 +1253,18 @@
         "values": false
       },
       "lines": true,
-      "linewidth": 2,
+      "linewidth": 3,
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.1.0",
+      "pluginVersion": "7.1.5",
       "pointradius": 3,
       "points": false,
       "renderer": "flot",
       "scopedVars": {
         "location": {
           "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
+          "text": "Philadelphia",
+          "value": "Philadelphia"
         }
       },
       "seriesOverrides": [
@@ -816,7 +1284,7 @@
       "targets": [
         {
           "command": "ts.mrange",
-          "filter": "location=$location metric=clouds mode=hourly",
+          "filter": "location=\"$location\" metric=clouds mode=hourly",
           "key": "39.86,-74.9:clouds",
           "legend": "location",
           "query": "",
@@ -826,7 +1294,7 @@
         },
         {
           "command": "ts.mrange",
-          "filter": "location=$location metric=rain mode=hourly",
+          "filter": "location=\"$location\" metric=rain mode=hourly",
           "key": "39.86,-74.9:rain",
           "legend": "location",
           "query": "",
@@ -850,7 +1318,7 @@
         }
       ],
       "timeShift": null,
-      "title": "Sky",
+      "title": "Sky in $location",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -898,8 +1366,7 @@
       "description": "",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
-          "links": []
+          "custom": {}
         },
         "overrides": []
       },
@@ -909,7 +1376,7 @@
         "h": 8,
         "w": 8,
         "x": 16,
-        "y": 7
+        "y": 8
       },
       "hiddenSeries": false,
       "id": 10,
@@ -923,18 +1390,18 @@
         "values": false
       },
       "lines": true,
-      "linewidth": 2,
+      "linewidth": 3,
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.1.0",
+      "pluginVersion": "7.1.5",
       "pointradius": 3,
       "points": false,
       "renderer": "flot",
       "scopedVars": {
         "location": {
           "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
+          "text": "Philadelphia",
+          "value": "Philadelphia"
         }
       },
       "seriesOverrides": [
@@ -949,11 +1416,13 @@
       "targets": [
         {
           "command": "ts.mrange",
-          "filter": "location=$location metric=wind_speed mode=hourly",
+          "filter": "location=\"$location\" metric=wind_speed mode=hourly",
           "key": "39.86,-74.9:wind_speed",
+          "legend": "location",
           "query": "",
           "refId": "A",
-          "type": "timeSeries"
+          "type": "timeSeries",
+          "value": "metric"
         }
       ],
       "thresholds": [
@@ -988,7 +1457,7 @@
         }
       ],
       "timeShift": null,
-      "title": "Wind Speed",
+      "title": "Wind Speed in $location",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -1034,434 +1503,653 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 15
+        "y": 16
       },
-      "id": 36,
+      "id": 57,
       "panels": [],
-      "title": "Compare locations",
+      "title": "Activities, maps",
       "type": "row"
     },
     {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "Redis",
-      "description": "",
+      "circleMaxSize": "15",
+      "circleMinSize": "10",
+      "colors": [
+        "#37872D",
+        "#37872D"
+      ],
+      "datasource": null,
+      "decimals": 0,
+      "esMetric": "Count",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
-          "links": []
+          "custom": {
+            "align": null
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lat"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              },
+              {
+                "id": "decimals",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lon"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              },
+              {
+                "id": "decimals",
+                "value": 5
+              }
+            ]
+          }
+        ]
       },
-      "fill": 0,
-      "fillGradient": 0,
       "gridPos": {
-        "h": 9,
-        "w": 8,
+        "h": 18,
+        "w": 6,
         "x": 0,
-        "y": 16
+        "y": 17
       },
-      "hiddenSeries": false,
-      "id": 37,
-      "legend": {
-        "avg": false,
-        "current": false,
-        "max": false,
-        "min": false,
-        "show": true,
-        "total": false,
-        "values": false
+      "hideEmpty": false,
+      "hideZero": false,
+      "id": 49,
+      "initialZoom": "7",
+      "locationData": "table",
+      "mapCenter": "custom",
+      "mapCenterLatitude": "39.86",
+      "mapCenterLongitude": "-74.8",
+      "maxDataPoints": 1,
+      "mouseWheelZoom": false,
+      "pluginVersion": "7.0.4",
+      "repeat": "activity",
+      "scopedVars": {
+        "activity": {
+          "selected": false,
+          "text": "Beach",
+          "value": "Beach"
+        }
       },
-      "lines": true,
-      "linewidth": 2,
-      "nullPointMode": "null",
-      "percentage": false,
-      "pluginVersion": "7.1.0",
-      "pointradius": 3,
-      "points": false,
-      "renderer": "flot",
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
+      "showLegend": false,
+      "stickyLabels": true,
+      "tableQueryOptions": {
+        "geohashField": "geohash",
+        "labelField": "location",
+        "latitudeField": "lat",
+        "longitudeField": "lon",
+        "metricField": "value",
+        "queryType": "coordinates"
+      },
       "targets": [
         {
+          "aggregation": "sum",
+          "bucket": "1728000000",
           "command": "ts.mrange",
-          "filter": "metric=clouds mode=hourly",
-          "key": "39.86,-74.9:clouds",
-          "legend": "location",
+          "filter": "activity=$activity mode=activity_graph",
           "query": "",
           "refId": "A",
-          "type": "timeSeries",
-          "value": "metric"
+          "type": "timeSeries"
         }
       ],
-      "thresholds": [
-        {
-          "colorMode": "custom",
-          "fill": true,
-          "fillColor": "rgb(82, 82, 82)",
-          "line": false,
-          "lineColor": "rgba(31, 96, 196, 0.6)",
-          "op": "gt",
-          "value": 60,
-          "yaxis": "left"
-        }
-      ],
+      "thresholds": "",
       "timeFrom": null,
-      "timeRegions": [
-        {
-          "colorMode": "gray",
-          "fill": true,
-          "fillColor": "rgba(234, 112, 112, 0.12)",
-          "from": "21:00",
-          "line": false,
-          "lineColor": "rgba(237, 46, 24, 0.60)",
-          "op": "time",
-          "to": "6:00"
-        }
-      ],
       "timeShift": null,
-      "title": "Cloud",
-      "tooltip": {
-        "shared": true,
-        "sort": 0,
-        "value_type": "individual"
-      },
+      "title": "$activity map",
       "transformations": [
         {
-          "id": "filterFieldsByName",
-          "options": {
-            "include": {
-              "names": [
-                "time",
-                "NewYork clouds",
-                "Philadelphia clouds",
-                "Princeton clouds"
-              ]
-            }
-          }
+          "id": "labelsToFields",
+          "options": {}
         }
       ],
-      "type": "graph",
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "yaxes": [
-        {
-          "decimals": null,
-          "format": "percent",
-          "label": null,
-          "logBase": 1,
-          "max": "100",
-          "min": "0",
-          "show": true
-        },
-        {
-          "decimals": null,
-          "format": "lengthmm",
-          "label": null,
-          "logBase": 1,
-          "max": "14",
-          "min": "0",
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
+      "type": "grafana-worldmap-panel",
+      "unitPlural": "",
+      "unitSingle": "",
+      "valueName": "current"
     },
     {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "Redis",
-      "description": "",
+      "circleMaxSize": "15",
+      "circleMinSize": "10",
+      "colors": [
+        "#37872D",
+        "#37872D"
+      ],
+      "datasource": null,
+      "decimals": 0,
+      "esMetric": "Count",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
-          "links": []
-        },
-        "overrides": []
-      },
-      "fill": 0,
-      "fillGradient": 3,
-      "gridPos": {
-        "h": 9,
-        "w": 8,
-        "x": 8,
-        "y": 16
-      },
-      "hiddenSeries": false,
-      "id": 38,
-      "legend": {
-        "avg": false,
-        "current": false,
-        "max": false,
-        "min": false,
-        "show": true,
-        "total": false,
-        "values": false
-      },
-      "lines": true,
-      "linewidth": 2,
-      "nullPointMode": "null",
-      "percentage": false,
-      "pluginVersion": "7.1.0",
-      "pointradius": 3,
-      "points": false,
-      "renderer": "flot",
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
-      "targets": [
-        {
-          "command": "ts.mrange",
-          "filter": "metric=rain mode=hourly",
-          "key": "39.86,-74.9:rain",
-          "legend": "location",
-          "query": "",
-          "refId": "B",
-          "type": "timeSeries",
-          "value": "metric"
-        }
-      ],
-      "thresholds": [
-        {
-          "colorMode": "custom",
-          "fill": true,
-          "fillColor": "rgba(51, 162, 229, 0.2)",
-          "line": false,
-          "lineColor": "rgba(31, 96, 196, 0.6)",
-          "op": "gt",
-          "value": 1,
-          "yaxis": "left"
-        }
-      ],
-      "timeFrom": null,
-      "timeRegions": [
-        {
-          "colorMode": "gray",
-          "fill": true,
-          "fillColor": "rgba(234, 112, 112, 0.12)",
-          "from": "21:00",
-          "line": false,
-          "lineColor": "rgba(237, 46, 24, 0.60)",
-          "op": "time",
-          "to": "6:00"
-        }
-      ],
-      "timeShift": null,
-      "title": "Rain",
-      "tooltip": {
-        "shared": true,
-        "sort": 0,
-        "value_type": "individual"
-      },
-      "transformations": [
-        {
-          "id": "filterFieldsByName",
-          "options": {
-            "include": {
-              "names": [
-                "time",
-                "NewYork rain",
-                "Philadelphia rain",
-                "Princeton rain"
-              ]
-            }
+          "custom": {
+            "align": null
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
           }
-        }
-      ],
-      "type": "graph",
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "yaxes": [
-        {
-          "decimals": null,
-          "format": "lengthmm",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": "0",
-          "show": true
         },
-        {
-          "decimals": null,
-          "format": "lengthmm",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": "0",
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "Redis",
-      "description": "",
-      "fieldConfig": {
-        "defaults": {
-          "custom": {},
-          "links": []
-        },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lat"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              },
+              {
+                "id": "decimals",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lon"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              },
+              {
+                "id": "decimals",
+                "value": 5
+              }
+            ]
+          }
+        ]
       },
-      "fill": 0,
-      "fillGradient": 0,
       "gridPos": {
-        "h": 9,
-        "w": 8,
-        "x": 16,
-        "y": 16
+        "h": 18,
+        "w": 6,
+        "x": 6,
+        "y": 17
       },
-      "hiddenSeries": false,
-      "id": 39,
-      "legend": {
-        "avg": false,
-        "current": false,
-        "max": false,
-        "min": false,
-        "show": true,
-        "total": false,
-        "values": false
+      "hideEmpty": false,
+      "hideZero": false,
+      "id": 313,
+      "initialZoom": "7",
+      "locationData": "table",
+      "mapCenter": "custom",
+      "mapCenterLatitude": "39.86",
+      "mapCenterLongitude": "-74.8",
+      "maxDataPoints": 1,
+      "mouseWheelZoom": false,
+      "pluginVersion": "7.0.4",
+      "repeat": null,
+      "repeatIteration": 1600205062720,
+      "repeatPanelId": 49,
+      "scopedVars": {
+        "activity": {
+          "selected": false,
+          "text": "Bike",
+          "value": "Bike"
+        }
       },
-      "lines": true,
-      "linewidth": 2,
-      "nullPointMode": "null",
-      "percentage": false,
-      "pluginVersion": "7.1.0",
-      "pointradius": 3,
-      "points": false,
-      "renderer": "flot",
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
+      "showLegend": false,
+      "stickyLabels": true,
+      "tableQueryOptions": {
+        "geohashField": "geohash",
+        "labelField": "location",
+        "latitudeField": "lat",
+        "longitudeField": "lon",
+        "metricField": "value",
+        "queryType": "coordinates"
+      },
       "targets": [
         {
+          "aggregation": "sum",
+          "bucket": "1728000000",
           "command": "ts.mrange",
-          "filter": "metric=wind_speed mode=hourly",
-          "key": "39.86,-74.9:wind_speed",
-          "legend": "location",
+          "filter": "activity=$activity mode=activity_graph",
           "query": "",
           "refId": "A",
-          "type": "timeSeries",
-          "value": "metric"
+          "type": "timeSeries"
         }
       ],
-      "thresholds": [
-        {
-          "colorMode": "warning",
-          "fill": true,
-          "line": false,
-          "op": "gt",
-          "value": 10,
-          "yaxis": "left"
-        },
-        {
-          "colorMode": "critical",
-          "fill": true,
-          "line": false,
-          "op": "gt",
-          "value": 20,
-          "yaxis": "left"
-        }
-      ],
+      "thresholds": "",
       "timeFrom": null,
-      "timeRegions": [
-        {
-          "colorMode": "gray",
-          "fill": true,
-          "fillColor": "rgba(234, 112, 112, 0.12)",
-          "from": "21:00",
-          "line": false,
-          "lineColor": "rgba(237, 46, 24, 0.60)",
-          "op": "time",
-          "to": "6:00"
-        }
-      ],
       "timeShift": null,
-      "title": "Wind Speed",
-      "tooltip": {
-        "shared": true,
-        "sort": 0,
-        "value_type": "individual"
-      },
+      "title": "$activity map",
       "transformations": [
         {
-          "id": "filterFieldsByName",
-          "options": {
-            "include": {
-              "names": [
-                "time",
-                "Avalon wind_speed",
-                "ColdSpring wind_speed",
-                "NewYork wind_speed",
-                "Princeton wind_speed",
-                "Philadelphia wind_speed"
-              ]
-            }
+          "id": "labelsToFields",
+          "options": {}
+        }
+      ],
+      "type": "grafana-worldmap-panel",
+      "unitPlural": "",
+      "unitSingle": "",
+      "valueName": "current"
+    },
+    {
+      "circleMaxSize": "15",
+      "circleMinSize": "10",
+      "colors": [
+        "#37872D",
+        "#37872D"
+      ],
+      "datasource": null,
+      "decimals": 0,
+      "esMetric": "Count",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
           }
-        }
-      ],
-      "type": "graph",
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "yaxes": [
-        {
-          "decimals": null,
-          "format": "velocitymph",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": "0",
-          "show": true
         },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lat"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              },
+              {
+                "id": "decimals",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lon"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              },
+              {
+                "id": "decimals",
+                "value": 5
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 18,
+        "w": 6,
+        "x": 12,
+        "y": 17
+      },
+      "hideEmpty": false,
+      "hideZero": false,
+      "id": 314,
+      "initialZoom": "7",
+      "locationData": "table",
+      "mapCenter": "custom",
+      "mapCenterLatitude": "39.86",
+      "mapCenterLongitude": "-74.8",
+      "maxDataPoints": 1,
+      "mouseWheelZoom": false,
+      "pluginVersion": "7.0.4",
+      "repeat": null,
+      "repeatIteration": 1600205062720,
+      "repeatPanelId": 49,
+      "scopedVars": {
+        "activity": {
+          "selected": false,
+          "text": "Climbing",
+          "value": "Climbing"
+        }
+      },
+      "showLegend": false,
+      "stickyLabels": true,
+      "tableQueryOptions": {
+        "geohashField": "geohash",
+        "labelField": "location",
+        "latitudeField": "lat",
+        "longitudeField": "lon",
+        "metricField": "value",
+        "queryType": "coordinates"
+      },
+      "targets": [
         {
-          "decimals": null,
-          "format": "lengthmm",
-          "label": null,
-          "logBase": 1,
-          "max": "10",
-          "min": "0",
-          "show": true
+          "aggregation": "sum",
+          "bucket": "1728000000",
+          "command": "ts.mrange",
+          "filter": "activity=$activity mode=activity_graph",
+          "query": "",
+          "refId": "A",
+          "type": "timeSeries"
         }
       ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
+      "thresholds": "",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "$activity map",
+      "transformations": [
+        {
+          "id": "labelsToFields",
+          "options": {}
+        }
+      ],
+      "type": "grafana-worldmap-panel",
+      "unitPlural": "",
+      "unitSingle": "",
+      "valueName": "current"
+    },
+    {
+      "circleMaxSize": "15",
+      "circleMinSize": "10",
+      "colors": [
+        "#37872D",
+        "#37872D"
+      ],
+      "datasource": null,
+      "decimals": 0,
+      "esMetric": "Count",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lat"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              },
+              {
+                "id": "decimals",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lon"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              },
+              {
+                "id": "decimals",
+                "value": 5
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 18,
+        "w": 6,
+        "x": 18,
+        "y": 17
+      },
+      "hideEmpty": false,
+      "hideZero": false,
+      "id": 315,
+      "initialZoom": "7",
+      "locationData": "table",
+      "mapCenter": "custom",
+      "mapCenterLatitude": "39.86",
+      "mapCenterLongitude": "-74.8",
+      "maxDataPoints": 1,
+      "mouseWheelZoom": false,
+      "pluginVersion": "7.0.4",
+      "repeat": null,
+      "repeatIteration": 1600205062720,
+      "repeatPanelId": 49,
+      "scopedVars": {
+        "activity": {
+          "selected": false,
+          "text": "Hiking",
+          "value": "Hiking"
+        }
+      },
+      "showLegend": false,
+      "stickyLabels": true,
+      "tableQueryOptions": {
+        "geohashField": "geohash",
+        "labelField": "location",
+        "latitudeField": "lat",
+        "longitudeField": "lon",
+        "metricField": "value",
+        "queryType": "coordinates"
+      },
+      "targets": [
+        {
+          "aggregation": "sum",
+          "bucket": "1728000000",
+          "command": "ts.mrange",
+          "filter": "activity=$activity mode=activity_graph",
+          "query": "",
+          "refId": "A",
+          "type": "timeSeries"
+        }
+      ],
+      "thresholds": "",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "$activity map",
+      "transformations": [
+        {
+          "id": "labelsToFields",
+          "options": {}
+        }
+      ],
+      "type": "grafana-worldmap-panel",
+      "unitPlural": "",
+      "unitSingle": "",
+      "valueName": "current"
+    },
+    {
+      "circleMaxSize": "15",
+      "circleMinSize": "10",
+      "colors": [
+        "#37872D",
+        "#37872D"
+      ],
+      "datasource": null,
+      "decimals": 0,
+      "esMetric": "Count",
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": null
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lat"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              },
+              {
+                "id": "decimals",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "lon"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              },
+              {
+                "id": "decimals",
+                "value": 5
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 18,
+        "w": 6,
+        "x": 0,
+        "y": 35
+      },
+      "hideEmpty": false,
+      "hideZero": false,
+      "id": 316,
+      "initialZoom": "7",
+      "locationData": "table",
+      "mapCenter": "custom",
+      "mapCenterLatitude": "39.86",
+      "mapCenterLongitude": "-74.8",
+      "maxDataPoints": 1,
+      "mouseWheelZoom": false,
+      "pluginVersion": "7.0.4",
+      "repeat": null,
+      "repeatIteration": 1600205062720,
+      "repeatPanelId": 49,
+      "scopedVars": {
+        "activity": {
+          "selected": false,
+          "text": "Photo",
+          "value": "Photo"
+        }
+      },
+      "showLegend": false,
+      "stickyLabels": true,
+      "tableQueryOptions": {
+        "geohashField": "geohash",
+        "labelField": "location",
+        "latitudeField": "lat",
+        "longitudeField": "lon",
+        "metricField": "value",
+        "queryType": "coordinates"
+      },
+      "targets": [
+        {
+          "aggregation": "sum",
+          "bucket": "1728000000",
+          "command": "ts.mrange",
+          "filter": "activity=$activity mode=activity_graph",
+          "query": "",
+          "refId": "A",
+          "type": "timeSeries"
+        }
+      ],
+      "thresholds": "",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "$activity map",
+      "transformations": [
+        {
+          "id": "labelsToFields",
+          "options": {}
+        }
+      ],
+      "type": "grafana-worldmap-panel",
+      "unitPlural": "",
+      "unitSingle": "",
+      "valueName": "current"
     }
   ],
-  "refresh": false,
+  "refresh": "15m",
   "schemaVersion": 26,
   "style": "dark",
   "tags": [],
@@ -1470,9 +2158,9 @@
       {
         "allValue": null,
         "current": {
-          "selected": true,
-          "text": "NewYork",
-          "value": "NewYork"
+          "selected": false,
+          "text": "Philadelphia",
+          "value": "Philadelphia"
         },
         "datasource": "Redis",
         "definition": "smembers places",
@@ -1492,11 +2180,89 @@
         "tagsQuery": "",
         "type": "query",
         "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "All",
+          "value": "$__all"
+        },
+        "datasource": "Redis",
+        "definition": "smembers activities",
+        "hide": 2,
+        "includeAll": true,
+        "label": "Activity",
+        "multi": false,
+        "name": "activity",
+        "options": [],
+        "query": "smembers activities",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "All",
+          "value": "$__all"
+        },
+        "datasource": "Redis",
+        "definition": "smembers \"$location\":activities",
+        "hide": 2,
+        "includeAll": true,
+        "label": "Activities in location",
+        "multi": false,
+        "name": "activity_location",
+        "options": [],
+        "query": "smembers \"$location\":activities",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "All",
+          "value": "$__all"
+        },
+        "datasource": "Redis",
+        "definition": "smembers \"$activity\":places",
+        "hide": 2,
+        "includeAll": true,
+        "label": "Locations with activity",
+        "multi": false,
+        "name": "location_activity",
+        "options": [],
+        "query": "smembers \"$activity\":places",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
       }
     ]
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-7h",
     "to": "now+42h"
   },
   "timepicker": {
@@ -1515,5 +2281,5 @@
   "timezone": "utc",
   "title": "Weather",
   "uid": "QQ0NufGGk",
-  "version": 4
+  "version": 6
 }
