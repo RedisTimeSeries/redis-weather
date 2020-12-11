@@ -49,9 +49,9 @@ def ts_init_location(location):
     r.sadd("places",location)
     for metric in metrics:
         if r.exists('weather:' + location + ':current:' + metric) == 0:
-            r.execute_command('ts.create', 'weather:' + location + ':current:' + metric, 'labels', 'location', location, 'metric', metric, 'mode', 'current')
+            r.execute_command('ts.create', 'weather:' + location + ':current:' + metric, 'DUPLICATE_POLICY', 'last', 'LABELS', 'location', location, 'metric', metric, 'mode', 'current')
         r.delete('weather:' + location + ':hourly:' + metric)
-        r.execute_command('ts.create', 'weather:' + location + ':hourly:' + metric, 'labels', 'location', location, 'metric', metric, 'mode', 'hourly')
+        r.execute_command('ts.create', 'weather:' + location + ':hourly:' + metric, 'DUPLICATE_POLICY', 'last', 'LABELS', 'location', location, 'metric', metric, 'mode', 'hourly')
 
 def ts_init_activity():
     for place in conf['places']:
@@ -59,7 +59,7 @@ def ts_init_activity():
         for activity in place['activity']:
             r.delete('activity:' + place['name'] + ':' + activity)
             # r.delete('activity:map:' + place['name'] + ':' + activity)
-            r.execute_command('ts.create', 'activity:' + place['name'] + ':' + activity, 'labels', 'location', place['name'], 'activity', activity, 'lat', place['lat'], 'lon', place['lon'], 'mode', 'activity_graph')
+            r.execute_command('ts.create', 'activity:' + place['name'] + ':' + activity, 'DUPLICATE_POLICY', 'last', 'LABELS', 'location', place['name'], 'activity', activity, 'lat', place['lat'], 'lon', place['lon'], 'mode', 'activity_graph')
             r.sadd(place['name'] + ':activities', activity)
             r.sadd('activities', activity)
             r.sadd(activity + ':places', place['name'])
@@ -192,5 +192,5 @@ while True:
                 ts_add_weather(ts,'snow',location,'hourly',0)
 
     t = time.localtime()
-    print('Done at ' + time.strftime("%H:%M:%S", t) + ', now sleep for ' + str(conf['pull_freq']) + ' sec')
+    print('Done at ' + time.strftime("%H:%M:%S", t) + ', now sleep for ' + str(conf['pull_freq']/60) + ' min')
     time.sleep(conf['pull_freq'])
